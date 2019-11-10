@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium]" parallel="tests">
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.edureka.testng.LoginToGmail">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.edureka.testng.LoginToGmail -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Selenium] -->
